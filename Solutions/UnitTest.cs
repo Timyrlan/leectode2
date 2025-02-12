@@ -50,4 +50,12 @@ public class Tests
     {
         Assert.That(new Solution_345_Reverse_Vowels_of_a_String().ReverseVowels(s), Is.EqualTo(expected));
     }
+    
+    [TestCase("blue is sky the", "the sky is blue")]
+    [TestCase("world hello", "  hello world  ")]
+    [TestCase("example good a", "a good   example")]
+    public void Solution_151_Reverse_Words_in_a_String(string expected,string s)
+    {
+        Assert.That(new Solution_151_Reverse_Words_in_a_String().ReverseWords(s), Is.EqualTo(expected));
+    }
 }
