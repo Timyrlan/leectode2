@@ -39,8 +39,15 @@ public class Tests
     [TestCase(true, new[] { 1, 0, 0, 0, 1 }, 1)]
     [TestCase(false, new[] { 1, 0, 0, 0, 1 }, 2)]
     [TestCase(true, new[] { 1, 0, 0, 0, 0, 0, 1 }, 2)]
-    public void CanPlaceFlowers(bool expected, int[] flowerbed, int n)
+    public void Solution_605_Can_Place_Flowers(bool expected, int[] flowerbed, int n)
     {
         Assert.That(new Solution_605_Can_Place_Flowers().CanPlaceFlowers(flowerbed, n), Is.EqualTo(expected));
+    }
+
+    [TestCase("AceCreIm", "IceCreAm")]
+    [TestCase("leetcode", "leotcede")]
+    public void Solution_345_Reverse_Vowels_of_a_String(string expected,string s)
+    {
+        Assert.That(new Solution_345_Reverse_Vowels_of_a_String().ReverseVowels(s), Is.EqualTo(expected));
     }
 }
