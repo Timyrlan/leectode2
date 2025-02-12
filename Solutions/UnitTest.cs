@@ -35,4 +35,12 @@ public class Tests
     {
         Assert.That(new Solution_1431_Kids_With_the_Greatest_Number_of_Candies().KidsWithCandies(candies, extraCandies), Is.EqualTo(expected.ToList()));
     }
+
+    [TestCase(true, new[] { 1, 0, 0, 0, 1 }, 1)]
+    [TestCase(false, new[] { 1, 0, 0, 0, 1 }, 2)]
+    [TestCase(true, new[] { 1, 0, 0, 0, 0, 0, 1 }, 2)]
+    public void CanPlaceFlowers(bool expected, int[] flowerbed, int n)
+    {
+        Assert.That(new Solution_605_Can_Place_Flowers().CanPlaceFlowers(flowerbed, n), Is.EqualTo(expected));
+    }
 }
