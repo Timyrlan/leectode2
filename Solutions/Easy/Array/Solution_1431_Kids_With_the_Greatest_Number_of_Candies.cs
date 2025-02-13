@@ -1,4 +1,4 @@
-namespace Solutions.Easy;
+namespace Solutions.Easy.Array;
 
 public class Solution_1431_Kids_With_the_Greatest_Number_of_Candies
 {

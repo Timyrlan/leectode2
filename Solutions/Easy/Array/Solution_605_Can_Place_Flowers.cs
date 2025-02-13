@@ -1,4 +1,4 @@
-namespace Solutions.Easy;
+namespace Solutions.Easy.Array;
 
 public class Solution_605_Can_Place_Flowers
 {

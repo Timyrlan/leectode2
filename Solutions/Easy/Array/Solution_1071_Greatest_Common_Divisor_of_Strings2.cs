@@ -1,4 +1,4 @@
-namespace Solutions.Easy;
+namespace Solutions.Easy.Array;
 
 public class Solution_1071_Greatest_Common_Divisor_of_Strings2
 {

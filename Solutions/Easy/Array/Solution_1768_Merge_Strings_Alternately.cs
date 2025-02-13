@@ -1,6 +1,6 @@
 using System.Text;
 
-namespace Solutions.Easy;
+namespace Solutions.Easy.Array;
 
 public class Solution_1768_Merge_Strings_Alternately
 {
