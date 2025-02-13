@@ -1,4 +1,4 @@
-namespace Solutions.Easy.Array;
+namespace Solutions.Medium.Array;
 
 public class Solution_151_Reverse_Words_in_a_String
 {
