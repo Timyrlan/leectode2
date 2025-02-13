@@ -1,4 +1,4 @@
-namespace Solutions;
+namespace Solutions.Medium;
 
 public class Solution_238_Product_of_Array_Except_Self
 {

@@ -1,4 +1,4 @@
-namespace Solutions;
+namespace Solutions.Easy;
 
 public class Solution_151_Reverse_Words_in_a_String
 {

@@ -1,4 +1,4 @@
-namespace Solutions;
+namespace Solutions.Easy;
 
 public class Solution_1071_Greatest_Common_Divisor_of_Strings2
 {
@@ -25,7 +25,7 @@ public class Solution_1071_Greatest_Common_Divisor_of_Strings2
 
     private bool Dv(string strA, string strB)
     {
-        
+
         return string.IsNullOrEmpty(strA.Replace(strB, string.Empty));
     }
 }

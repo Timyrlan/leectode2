@@ -1,4 +1,4 @@
-namespace Solutions;
+namespace Solutions.Easy;
 
 public class Solution_345_Reverse_Vowels_of_a_String
 {

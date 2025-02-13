@@ -1,6 +1,6 @@
 using System.Text;
 
-namespace Solutions;
+namespace Solutions.Easy;
 
 public class Solution_1071_Greatest_Common_Divisor_of_Strings
 {
