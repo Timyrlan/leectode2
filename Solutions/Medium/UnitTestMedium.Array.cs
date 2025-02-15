@@ -22,7 +22,8 @@ public class Tests
     [TestCase(true, new[] { 1, 2, 3, 4, 5 })]
     [TestCase(false, new[] { 5, 4, 3, 2, 1 })]
     [TestCase(true, new[] { 2, 1, 5, 0, 4, 6 })]
-    public void Solution_238_Product_of_Array_Except_Self(bool expected, int[] nums)
+    [TestCase(false, new[] { 2, 4, -2, -3 })]
+    public void Solution_334_Increasing_Triplet_Subsequence(bool expected, int[] nums)
     {
         Assert.That(new Solution_334_Increasing_Triplet_Subsequence().IncreasingTriplet(nums), Is.EqualTo(expected));
     }
