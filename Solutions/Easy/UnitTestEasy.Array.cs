@@ -2,7 +2,7 @@ using Solutions.Easy.Array;
 
 namespace Solutions.Easy;
 
-public class UnitTestEasy
+public class UnitTestEasyArray
 {
     [TestCase("apbqcr", "abc", "pqr")]
     [TestCase("apbqrs", "ab", "pqrs")]

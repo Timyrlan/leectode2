@@ -2,7 +2,7 @@ using Solutions.Medium.Array;
 
 namespace Solutions.Medium;
 
-public class Tests
+public class UnitMediumEasyArray
 {
     [TestCase("blue is sky the", "the sky is blue")]
     [TestCase("world hello", "  hello world  ")]
