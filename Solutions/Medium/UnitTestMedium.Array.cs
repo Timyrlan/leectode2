@@ -27,4 +27,13 @@ public class Tests
     {
         Assert.That(new Solution_334_Increasing_Triplet_Subsequence().IncreasingTriplet(nums), Is.EqualTo(expected));
     }
+    
+    [TestCase(6, new[] { 'a', 'a', 'b', 'b', 'c', 'c', 'c' })]
+    [TestCase(1, new[] { 'a' })]
+    [TestCase(4, new[] { 'a', 'b', 'b', 'b', 'b', 'b', 'b', 'b', 'b', 'b', 'b', 'b', 'b' })]
+    [TestCase(6, new[] { 'a', 'a', 'b', 'b', 'c', 'c', 'c' })]
+    public void Solution_443_String_Compression(int expected, char[] chars)
+    {
+        Assert.That(new Solution_443_String_Compression().Compress(chars), Is.EqualTo(expected));
+    }
 }
