@@ -1,8 +1,6 @@
-using Solutions.Easy.Array;
+namespace Solutions.Easy.Array;
 
-namespace Solutions.Easy;
-
-public class UnitTestEasyArray
+public class Test
 {
     [TestCase("apbqcr", "abc", "pqr")]
     [TestCase("apbqrs", "ab", "pqrs")]

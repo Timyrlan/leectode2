@@ -1,8 +1,6 @@
-using Solutions.Medium.TwoPointers;
+namespace Solutions.Hard.TwoPointers;
 
-namespace Solutions.Hard;
-
-public class UnitTestHardTwoPointers
+public class Test
 {
     [TestCase(6, new[] { 0, 1, 0, 2, 1, 0, 1, 3, 2, 1, 2, 1 })]
     [TestCase(9, new[] { 4, 2, 0, 3, 2, 5 })]

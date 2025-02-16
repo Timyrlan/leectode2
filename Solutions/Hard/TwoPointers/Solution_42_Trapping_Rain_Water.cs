@@ -1,4 +1,4 @@
-namespace Solutions.Medium.TwoPointers;
+namespace Solutions.Hard.TwoPointers;
 
 /// <summary>
 ///     https://leetcode.com/problems/trapping-rain-water/

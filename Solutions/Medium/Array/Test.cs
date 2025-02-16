@@ -1,7 +1,4 @@
-using Solutions.Medium.Array;
-using Solutions.Medium.TwoPointers;
-
-namespace Solutions.Medium;
+namespace Solutions.Medium.Array;
 
 public class UnitMediumEasyArray
 {
@@ -28,7 +25,7 @@ public class UnitMediumEasyArray
     {
         Assert.That(new Solution_334_Increasing_Triplet_Subsequence().IncreasingTriplet(nums), Is.EqualTo(expected));
     }
-    
+
     [TestCase(6, new[] { 'a', 'a', 'b', 'b', 'c', 'c', 'c' })]
     [TestCase(1, new[] { 'a' })]
     [TestCase(4, new[] { 'a', 'b', 'b', 'b', 'b', 'b', 'b', 'b', 'b', 'b', 'b', 'b', 'b' })]
@@ -36,12 +33,5 @@ public class UnitMediumEasyArray
     public void Solution_443_String_Compression(int expected, char[] chars)
     {
         Assert.That(new Solution_443_String_Compression().Compress(chars), Is.EqualTo(expected));
-    }
-    
-    [TestCase(2, new[] { 1, 2, 3, 4 }, 5)]
-    [TestCase(1, new[] { 3, 1, 3, 4, 3 }, 6)]
-    public void Solution_1679_Max_Number_of_K_Sum_Pairs(int expected, int[] nums, int k)
-    {
-        Assert.That(new Solution_1679_Max_Number_of_K_Sum_Pairs().MaxOperations(nums, k), Is.EqualTo(expected));
     }
 }
