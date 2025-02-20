@@ -4,6 +4,14 @@ namespace Solutions.Medium.SlidingWindow;
 
 public class Test
 {
+
+    [TestCase(6, new int[]{ 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 0 }, 2)]
+    [TestCase(10, new int[]{ 0, 0, 1, 1, 0, 0, 1, 1, 1, 0, 1, 1, 0, 0, 0, 1, 1, 1, 1 }, 3)]
+    public void Solution_1004_Max_Consecutive_Ones_III(double expected, int[] nums, int k)
+    {
+        Assert.That(new Solution_1004_Max_Consecutive_Ones_III().LongestOnes(nums, k), Is.EqualTo(expected));
+    }
+
     [TestCase(3, "abciiidef", 3)]
     [TestCase(2, "aeiou", 2)]
     [TestCase(2, "leetcode", 3)]
