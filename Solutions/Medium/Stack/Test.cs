@@ -17,4 +17,16 @@ public class Test
     {
         Assert.That(new Solution_735_Asteroid_Collision().AsteroidCollision(asteroids), Is.EqualTo(expected));
     }
+
+    [TestCase("aaaaaaaaaaaaaaaaaaaaaaaaaaa", "3[3[3[a]]]")]
+    [TestCase("aaaaaaaaa", "3[3[a]]")]
+    [TestCase("aaabcbc", "3[a]2[bc]")]
+    [TestCase("accaccacc", "3[a2[c]]")]
+    [TestCase("abcabccdcdcdef", "2[abc]3[cd]ef")]
+    [TestCase("ef", "ef")]
+    [TestCase("zzzyypqjkjkefjkjkefjkjkefjkjkefyypqjkjkefjkjkefjkjkefjkjkefef", "3[z]2[2[y]pq4[2[jk]e1[f]]]ef")]
+    public void Solution_394_Decode_String(string expected, string s)
+    {
+        Assert.That(new Solution_394_Decode_String().DecodeString(s), Is.EqualTo(expected));
+    }
 }
