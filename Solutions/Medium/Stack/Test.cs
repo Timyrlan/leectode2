@@ -29,4 +29,12 @@ public class Test
     {
         Assert.That(new Solution_394_Decode_String().DecodeString(s), Is.EqualTo(expected));
     }
+
+    [TestCase(9, new[] { "2", "1", "+", "3", "*" })]
+    [TestCase(6, new[] { "4", "13", "5", "/", "+" })]
+    [TestCase(22, new[] { "10", "6", "9", "3", "+", "-11", "*", "/", "*", "17", "+", "5", "+" })]
+    public void Solution_150_Evaluate_Reverse_Polish_Notation(int expected, string[] tokens)
+    {
+        Assert.That(new Solution_150_Evaluate_Reverse_Polish_Notation().EvalRPN(tokens), Is.EqualTo(expected));
+    }
 }
