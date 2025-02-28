@@ -26,6 +26,31 @@ public class Test
 
         Assert.That(actual, Is.EqualTo(expected));
     }
+
+
+    [TestCase(new[] { 3, 4, 5 }, new[] { 1, 2, 3, 4, 5 })]
+    [TestCase(new[] { 4, 5, 6 }, new[] { 1, 2, 3, 4, 5, 6 })]
+    public void Solution_876_Middle_of_the_Linked_List(int[] expected, int[] s)
+    {
+        var current = new ListNode(s[^1]);
+
+        for (var i = s.Length - 2; i >= 0; i--) current = new ListNode(s[i], current);
+
+        var result = new Solution_876_Middle_of_the_Linked_List().MiddleNode(current);
+
+        var items = new List<int>();
+        current = result;
+
+        while (current != null)
+        {
+            items.Add(current.val);
+            current = current.next;
+        }
+
+        var actual = items.ToArray();
+
+        Assert.That(actual, Is.EqualTo(expected));
+    }
 }
 
 public class ListNode(int val = 0, ListNode next = null)
