@@ -101,6 +101,22 @@ public class Test
 
         Assert.That(actual, Is.EqualTo(expected));
     }
+    
+    
+    [TestCase(6, new[] { 5, 4, 2, 1 })]
+    [TestCase(7, new[] { 4, 2, 2, 3 })]
+    [TestCase(182, new[] { 47, 22, 81, 46, 94, 95, 90, 22, 55, 91, 6, 83, 49, 65, 10, 32, 41, 26, 83, 99, 14, 85, 42, 99, 89, 69, 30, 92, 32, 74, 9, 81, 5, 9 })]
+    public void Solution_2130_Maximum_Twin_Sum_of_a_Linked_List(int expected, int[] s)
+    {
+        var current = new ListNode(s[^1]);
+
+        for (var i = s.Length - 2; i >= 0; i--) current = new ListNode(s[i], current);
+
+        var result = new Solution_2130_Maximum_Twin_Sum_of_a_Linked_List().PairSum(current);
+
+
+        Assert.That(result, Is.EqualTo(expected));
+    }
 }
 
 public class ListNode(int val = 0, ListNode next = null)
