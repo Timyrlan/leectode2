@@ -34,4 +34,12 @@ public class UnitMediumEasyArray
     {
         Assert.That(new Solution_443_String_Compression().Compress(chars), Is.EqualTo(expected));
     }
+    
+    [TestCase(2, new[] { 1, 2, 3 }, 3)]
+    [TestCase(2, new[] { 1, 1, 1 }, 2)]
+    [TestCase(1, new[] { -1, -1, 1 }, 0)]
+    public void Solution_Subarray_Sum_Equals_K(int expected, int[] nums, int k)
+    {
+        Assert.That(new Solution_Subarray_Sum_Equals_K().SubarraySum(nums, k), Is.EqualTo(expected));
+    }
 }

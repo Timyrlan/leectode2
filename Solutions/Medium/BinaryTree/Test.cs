@@ -10,6 +10,17 @@ public class Test
 
         Assert.That(new Solution_1448_Count_Good_Nodes_in_Binary_Tree().GoodNodes(node1), Is.EqualTo(4));
     }
+
+
+    [Test]
+    public void Solution_437_Path_Sum_III()
+    {
+        var targetSum = 8;
+        var node1 = new TreeNode(3, new TreeNode(1, new TreeNode(3)), new TreeNode(4, new TreeNode(1), new TreeNode(5)));
+
+
+        Assert.That(new Solution_437_Path_Sum_III().PathSum(node1, targetSum), Is.EqualTo(4));
+    }
 }
 
 /// <summary>
