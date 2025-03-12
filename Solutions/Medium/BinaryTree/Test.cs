@@ -101,21 +101,22 @@ public class Test
     }
 
     [Test]
-    public void Solution_1372_Longest_ZigZag_Path_in_a_Binary_Tree2()
+    public void Solution_236_Lowest_Common_Ancestor_of_a_Binary_Tree()
     {
-        var node1 = new TreeNode(1,
-            new TreeNode(2,
-                null,
-                new TreeNode(3,
-                    new TreeNode(4,
-                        null,
-                        new TreeNode(5)),
-                    new TreeNode(4))),
-            new TreeNode(1)
+        var node1 = new TreeNode(3,
+            new TreeNode(5,
+                new TreeNode(6),
+                new TreeNode(2,
+                    new TreeNode(7),
+                    new TreeNode(4))
+            ),
+            new TreeNode(1,
+                new TreeNode(),
+                new TreeNode(8))
         );
 
 
-        Assert.That(new Solution_1372_Longest_ZigZag_Path_in_a_Binary_Tree().LongestZigZag(node1), Is.EqualTo(4));
+        Assert.That(new Solution_236_Lowest_Common_Ancestor_of_a_Binary_Tree().LowestCommonAncestor(node1, new TreeNode(5), new TreeNode(1)).val, Is.EqualTo(3));
     }
 }
 
