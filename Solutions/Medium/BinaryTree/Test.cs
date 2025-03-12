@@ -74,10 +74,48 @@ public class Test
     public void Solution_437_Path_Sum_III_6()
     {
         var targetSum = 0;
-        var node1 = new TreeNode(1000000000, new TreeNode(1000000000,new TreeNode(294967296, new TreeNode(1000000000, new TreeNode(1000000000, new TreeNode(1000000000))))));
+        var node1 = new TreeNode(1000000000, new TreeNode(1000000000, new TreeNode(294967296, new TreeNode(1000000000, new TreeNode(1000000000, new TreeNode(1000000000))))));
 
 
         Assert.That(new Solution_437_Path_Sum_III().PathSum(node1, targetSum), Is.EqualTo(0));
+    }
+
+
+    [Test]
+    public void Solution_1372_Longest_ZigZag_Path_in_a_Binary_Tree()
+    {
+        var node1 = new TreeNode(1,
+            null,
+            new TreeNode(2,
+                new TreeNode(3),
+                new TreeNode(3,
+                    new TreeNode(4,
+                        null,
+                        new TreeNode(5,
+                            null,
+                            new TreeNode(6))),
+                    new TreeNode(4))));
+
+
+        Assert.That(new Solution_1372_Longest_ZigZag_Path_in_a_Binary_Tree().LongestZigZag(node1), Is.EqualTo(3));
+    }
+
+    [Test]
+    public void Solution_1372_Longest_ZigZag_Path_in_a_Binary_Tree2()
+    {
+        var node1 = new TreeNode(1,
+            new TreeNode(2,
+                null,
+                new TreeNode(3,
+                    new TreeNode(4,
+                        null,
+                        new TreeNode(5)),
+                    new TreeNode(4))),
+            new TreeNode(1)
+        );
+
+
+        Assert.That(new Solution_1372_Longest_ZigZag_Path_in_a_Binary_Tree().LongestZigZag(node1), Is.EqualTo(4));
     }
 }
 
